@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.contenedor-principal {
+    background:#3D3B3B;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+.nosotros {
+    padding: 20px;
+}
+
+.proyectos {
+    margin: 20px 15px 20px 5px;
+}
+
+.galeria {
+    margin: 20px 20px 20px 15px;
+}
+
+.nosotros .titulo-nosotros, .proyectos .titulo-proyectos,
+.galeria .titulo-galeria {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.nosotros .titulo-nosotros::after, .proyectos .titulo-proyectos::after,
+.galeria .titulo-galeria::after {
+    background: #fab702;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.nosotros p {
+    color: #B2ADAD;
+    margin-bottom: 15px;
+}
+
+.contenedor-imagenes {
+    width: 100%;
+    height: 300px;
+}
+
+.contenedor-imagenes img{
+    width: 32%;
+    height: auto;
+    margin-bottom: 7px;
+}
+
+.nosotros i {
+    margin: 20px 10px 20px 10px;
+    color: #B2ADAD;
+    font-size: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #212120;
+}
+
+.footer p {
+    padding: 20px;
+    color: #B2ADAD;
+}

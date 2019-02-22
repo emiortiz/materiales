@@ -1,0 +1,206 @@
+.seccion{
+  padding:40px 0 0 0;
+}
+.seccion-productos{
+  margin-bottom: 15px; 
+  margin-top: 15px;
+}
+.botones-color{
+  color: #212529;
+  border: 1px solid #ededed;
+  background: #ededed;
+}
+
+.botones-color:hover{
+  background: #fab702;
+  border-color: #fab702;
+  color: #fff;
+}
+
+.botones-row{
+  padding: 20px 0 20px 0;
+}
+
+.botones{
+  padding: 5px 20px 5px 20px;
+  margin-right: 10px;
+}
+
+.seperator span{
+    display: inline-block;
+    position: relative;
+}
+.seperator span:after,
+.seperator span:before{
+    background-color: black;
+    content: "";
+    height: 1px;
+    top: 50%;
+    width: 60px;
+    position:absolute;
+}
+
+.seperator span:before{
+    right: 100%;
+}
+
+.seperator span:after {
+    left: 100%;
+}
+
+.product::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #ddd;
+    top: 10px;
+    right: 25px;
+    bottom: 10px;
+    left: 25px;
+}
+.prueba{
+    position: absolute;
+    z-index:1;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+.prueba:hover{
+    background: rgba(0,0,0,0.45);
+    height: 100%;
+    width: 100%;
+}
+
+
+.ih-item {
+    position: relative;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .ih-item,
+  .ih-item * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .ih-item a {
+    color: #333;
+  }
+  .ih-item a:hover {
+    text-decoration: none;
+  }
+  .ih-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ih-item.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .ih-item.circle .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .ih-item.circle .img:before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ddd;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+  .ih-item.circle .img img {
+  }
+  .ih-item.circle .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .ih-item.square {
+    position: relative;
+    width: 316px;
+    height: 216px;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .ih-item.square .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .ih-item.circle.effect1 .spinner {
+    width: 230px;
+    height: 230px;
+    border: 10px solid #ecab18;
+    border-right-color: #1ad280;
+    border-bottom-color: #1ad280;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  
+  .ih-item.circle.effect19.colored .info {
+    background: #1a4a72;
+    background: rgba(26, 74, 114, 0.6);
+  }
+  .ih-item.circle.effect19 .info {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .ih-item.circle.effect19 .info h3 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 47% 0 0 0;
+    height: 140px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .ih-item.circle.effect19 .info p {
+    color: #bbb;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .ih-item.circle.effect19 a:hover .info {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  

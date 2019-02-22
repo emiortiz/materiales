@@ -1,0 +1,30 @@
+.titulo{
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.margin-botton{
+    margin-bottom:40px;
+}
+
+.seperator span{
+    display: inline-block;
+    position: relative;
+}
+.seperator span:after,
+.seperator span:before{
+    background-color: black;
+    content: "";
+    height: 1px;
+    top: 50%;
+    width: 60px;
+    position:absolute;
+}
+
+.seperator span:before{
+    right: 100%;
+}
+
+.seperator span:after {
+    left: 100%;
+}

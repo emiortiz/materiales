@@ -1,0 +1,45 @@
+<div class="row center seccion">
+  <div class="col">
+    <h1>Productos</h1>
+  </div>
+</div>
+<div class="row center">
+  <div class="col seperator">
+    <span>
+      <i class="fas fa-cog"></i>
+    </span>
+  </div>
+</div>
+<div class="row center botones-row">
+  <div class="col-12">
+      <button type="button" class="btn botones-color botones"  >All</button>
+    
+      <button type="button" class="btn botones-color botones">Cortes, Doblado y Armado</button>
+    
+      <button type="button" class="btn botones-color botones">Otros Productos</button>
+
+  </div>
+</div>
+<div class="row" *ngFor="let productos of productosDeA3">
+  <div class="col-md-4 seccion-productos" *ngFor="let producto of productos">
+
+    <div class="ih-item circle effect19"><a href="#">
+        <div class="img"><img src="{{ '../assets/productos/' + producto.img }}" alt="img"></div>
+        <div class="info">
+          <h3>{{ producto.nombre }}</h3>
+        </div>
+      </a></div>
+
+    <!-- <div class="prueba" style="position: absolute;z-index: 1;">
+                <h3>
+                  <a>Algo</a>
+                </h3>
+              </div>
+          
+          <div class="imagen">
+            <img  src="{{ '../assets/productos/' + producto.img }}" alt="{{ producto.nombre }}" height="100%" width="100%">
+          </div> -->
+
+  </div>
+
+</div>

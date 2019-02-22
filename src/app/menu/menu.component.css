@@ -1,0 +1,18 @@
+.modificacion{
+    padding: 0 0 0 5%;
+}
+.modificacion a{
+    text-transform: uppercase;
+    padding: 40px 20px;
+    font-weight: 700;
+    color: #303133;
+    font-size: 14px;
+}
+
+.modificacion a:hover{
+    color: #fab702;
+}
+
+.navbar{
+    padding: 0 0 0 4%;
+}
