@@ -1,3 +1,10 @@
-<p>
-  producto works!
-</p>
+<app-banner-generic [titulo]='producto.nombre'></app-banner-generic>
+
+<div class="container">
+        <div class="row container-info">
+            <div class="col-12 info">
+                <img src= "{{ '../assets/productos/' + producto.img }}" alt="img">
+                <div class="insert" [innerHTML]="producto.informacion"></div>
+            </div>
+        </div>
+    </div>

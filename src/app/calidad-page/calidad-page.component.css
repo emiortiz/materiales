@@ -1,0 +1,10 @@
+/* .container-info{
+    padding-left: 5%;
+    padding-right: 5%;
+} */
+.info{
+    margin-bottom: 40px;
+    margin-top:40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}

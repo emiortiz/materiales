@@ -1,0 +1,29 @@
+.backgraund::before{
+    background: rgba(0,0,0,0.45);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.leyenda{
+    text-align: center;
+    z-index: 999;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    position: absolute;
+    top: 56%;
+}
+.backgraund h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.indicador{
+    background-color: #fab702;
+}

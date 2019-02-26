@@ -5,6 +5,12 @@
   margin-bottom: 15px; 
   margin-top: 15px;
 }
+
+.active{
+  background: #fab702;
+  border-color: #fab702;
+  color: #fff;
+}
 .botones-color{
   color: #212529;
   border: 1px solid #ededed;

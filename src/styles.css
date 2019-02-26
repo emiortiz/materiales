@@ -2,3 +2,19 @@
 .center{
     text-align: center;
 }
+
+.titulo-innerhtml{
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.insert table{
+    padding-bottom: 15px;
+}
+
+.sub{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}

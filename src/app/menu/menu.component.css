@@ -5,7 +5,6 @@
     text-transform: uppercase;
     padding: 40px 20px;
     font-weight: 700;
-    color: #303133;
     font-size: 14px;
 }
 
@@ -15,4 +14,10 @@
 
 .navbar{
     padding: 0 0 0 4%;
+}
+.link{
+    color: #303133;
+}
+.active-link{
+    color: #fab702;
 }

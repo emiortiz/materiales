@@ -12,6 +12,15 @@ import { ProductosComponent } from './productos/productos.component';
 import { ProductoComponent } from './producto/producto.component';
 import { HeadComponent } from './head/head.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BannerGenericComponent } from './share/banner-generic/banner-generic.component';
+import { HomeComponent } from './home/home.component';
+import { NosotosPageComponent } from './nosotos-page/nosotos-page.component';
+import { ProductosPageComponent } from './productos-page/productos-page.component';
+import { CalidadPageComponent } from './calidad-page/calidad-page.component';
+import { TecnologiaPageComponent } from './tecnologia-page/tecnologia-page.component';
+import { ContactenosPageComponent } from './contactenos-page/contactenos-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +31,20 @@ import { HeadComponent } from './head/head.component';
     NosotrosComponent,
     ProductosComponent,
     ProductoComponent,
-    HeadComponent
+    HeadComponent,
+    BannerGenericComponent,
+    HomeComponent,
+    NosotosPageComponent,
+    ProductosPageComponent,
+    CalidadPageComponent,
+    TecnologiaPageComponent,
+    ContactenosPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

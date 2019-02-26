@@ -1,0 +1,30 @@
+.container-info{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.info{
+    margin-bottom: 40px;
+    margin-top:40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.info h5{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.info button{
+    background: #fab702;
+    color:white;
+    padding: 10px 35px 10px 35px;
+    
+}
+
+.info button:hover{
+    background: white;
+    color:#fab702;
+    border: 1px solid #fab702;
+    padding: 10px 35px 10px 35px;
+    
+}
