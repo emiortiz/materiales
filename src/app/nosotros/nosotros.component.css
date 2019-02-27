@@ -73,7 +73,9 @@ centrar-vertical{
    justify-content: center;
    align-items: center;
 }
-
+.espacio{
+    margin-top:20px;
+}
 .tarjeta{
     position: relative;
     height: 100%;

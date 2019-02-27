@@ -5,7 +5,6 @@
     -moz-box-sizing:border-box;
     box-sizing:border-box;
 }
-
 .contenedor-principal {
     background:#3D3B3B;
     width: 100%;
@@ -17,17 +16,19 @@
 
 
 .nosotros {
-    padding: 20px;
+    padding: 20px 0 20px 0;
 }
 
 .proyectos {
-    margin: 20px 15px 20px 5px;
+    margin: 20px 0 0 0;
 }
 
 .galeria {
-    margin: 20px 20px 20px 15px;
+    margin: 20px 0 0 0;
 }
-
+.texto{
+    margin-left: 10px;
+}
 .nosotros .titulo-nosotros, .proyectos .titulo-proyectos,
 .galeria .titulo-galeria {
     color: #fff;
@@ -56,15 +57,19 @@
 }
 
 .contenedor-imagenes img{
-    width: 32%;
+    width: 30%;
     height: auto;
-    margin-bottom: 7px;
+    margin: 3px;
 }
 
 .nosotros i {
     margin: 20px 10px 20px 10px;
     color: #B2ADAD;
     font-size: 20px;
+}
+
+.nosotros i:hover{
+    color:white;
 }
 
 .footer {

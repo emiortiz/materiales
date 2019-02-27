@@ -3,39 +3,56 @@
 <div class="container">
     <div class="row container-info">
         <div class="col-12 info">
-            <form>
+            <form [formGroup]="form" (submit)="onSubmit(form.value)">
 
                 <div>
                     <h5>Haznos llegar tu consulta</h5>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Empresa</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label >Empresa</label>
+                    <input class="form-control" formControlName="empresa" [ngClass]="{ 'is-invalid': submitted && f.empresa.errors }">
+                    <div *ngIf="submitted && f.empresa.errors" class="invalid-feedback">
+                        <div *ngIf="f.empresa.errors.required">Por favor, ingrese el nombre de su empresa</div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label >Nombre y Apellido</label>
+                    <input class="form-control" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }">
+                    <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+                        <div *ngIf="f.nombre.errors.required">Por favor, ingrese su nombre y apellido</div>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Nombre y Apellido</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label>Correo Electrónico</label>
+                    <input class="form-control" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Por favor, ingrese su E-mail</div>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Número Telefónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label >Número Telefónico</label>
+                    <input class="form-control" formControlName="telefono" [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Detalle de la Consulta</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" formControlName="consulta" rows="3" [ngClass]="{ 'is-invalid': submitted && f.consulta.errors }"></textarea>
+                    <div *ngIf="submitted && f.consulta.errors" class="invalid-feedback">
+                        <div *ngIf="f.consulta.errors.required">Por favor, ingrese su consulta</div>
+                    </div>
+                </div>
+
+                <div *ngIf="enviado" class="alert alert-success" role="alert">
+                    <div>Consulta enviada. Muchas gracias!</div>
                 </div>
 
                 <div>
-                    <button type="button" class="btn btn-warning">Enviar</button>
+                    <button type="submit"  class="btn btn-warning">Enviar</button>
                 </div>
             </form>
         </div>
